@@ -20,7 +20,7 @@ PlotSickleJrUMAP(
 
 \item{cluster}{String input that indicates which cluster to color by: defaults to \code{"kmeans"}}
 
-\item{title}{String input for optional \code{\link{ggplot2}{ggplot}} plot title}
+\item{title}{String input for optional \code{\link[ggplot2:ggplot]{ggplot}} plot title}
 
 \item{colorbymetadata}{Name of metadata column if coloring by metadata}
 

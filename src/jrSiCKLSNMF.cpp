@@ -111,7 +111,7 @@ void normalizeH(arma::mat& H, const std::string Hconstraint){
 arma::mat regFunc(const arma::mat& denomnumer, const arma::mat& H, const std::string Hconstraint){
   arma::mat regularizernumerdenom(denomnumer.n_rows,denomnumer.n_cols,arma::fill::value(0.0));
   if (Hconstraint=="L2Norm"){
-    arma::mat sumdenom=arma::sum(denomnumer);
+    arma::mat sumdenom=arma::sum(H%denomnumer);
     arma::mat regularizermat=arma::repmat(sumdenom,H.n_rows,1);
     regularizernumerdenom=H%regularizermat;
     return regularizernumerdenom;

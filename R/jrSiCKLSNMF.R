@@ -920,7 +920,7 @@ AddSickleJrMetadata<-function(SickleJr,metadata,metadataname){
 #' @param SickleJr An object of class SickleJr
 #' @param umap.modality String corresponding to the name of the UMAP of interest: defaults to \code{"H"}
 #' @param cluster String input that indicates which cluster to color by: defaults to \code{"kmeans"}
-#' @param title String input for optional \code{\link{ggplot2}{ggplot}} plot title
+#' @param title String input for optional \code{\link[ggplot2:ggplot]{ggplot}} plot title
 #' @param colorbymetadata Name of metadata column if coloring by metadata
 #' @param legendname String input that to allow specification of a different legend name
 #' @returns An object of class SickleJr with plots added to the \code{plots} slot
