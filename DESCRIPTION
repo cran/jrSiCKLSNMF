@@ -1,7 +1,7 @@
 Package: jrSiCKLSNMF
 Type: Package
 Title: Multimodal Single-Cell Omics Dimensionality Reduction
-Version: 1.2.2
+Version: 1.2.3
 Authors@R: 
     c(person("Dorothy","Ellis",email="ddemoreellis@gmail.com",role=c("aut","cre"),
     comment=c(ORCID="0000-0002-8624-0042")),
@@ -24,8 +24,9 @@ LazyDataCompression: xz
 VignetteBuilder: knitr
 RdMacros: Rdpack
 NeedsCompilation: yes
-Packaged: 2025-02-12 04:48:21 UTC; dorothyellis
-Author: Dorothy Ellis [aut, cre] (<https://orcid.org/0000-0002-8624-0042>),
+Packaged: 2025-07-11 09:06:41 UTC; dorothyellis
+Author: Dorothy Ellis [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-8624-0042>),
   Susmita Datta [ths],
   Kenneth Perkins [ctb] (Util.h function author,
     http://programmingnotes.org/),
@@ -33,4 +34,4 @@ Author: Dorothy Ellis [aut, cre] (<https://orcid.org/0000-0002-8624-0042>),
 Maintainer: Dorothy Ellis <ddemoreellis@gmail.com>
 Depends: R (>= 3.5.0)
 Repository: CRAN
-Date/Publication: 2025-02-12 11:50:06 UTC
+Date/Publication: 2025-07-11 10:10:02 UTC

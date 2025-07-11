@@ -1,4 +1,3 @@
-# jrSiCKLSNMF 1.2.2
+# jrSiCKLSNMF 1.2.3
 
-* Bug fix for L2 Norm option (changed arma::mat sumdenom=arma::sum(denomnumer);
-to arma::mat sumdenom=arma::sum(H%denomnumer);)
+* Re-uploading after kknn fix

@@ -541,7 +541,7 @@ PlotLossvsLatentFactors<-function(SickleJr,rounds=100,differr=1e-4,d_vector=c(2:
 #' \insertRef{irlba}{jrSiCKLSNMF}
 #' @export
 #' @examples
-#' SimSickleJrSmall<-DetermineDFromIRLBA(SimSickleJrSmall,d=5)
+#' \dontrun{SimSickleJrSmall<-DetermineDFromIRLBA(SimSickleJrSmall,d=5)}
 DetermineDFromIRLBA<-function(SickleJr,d=50){
 
   modalitylabels<-names(SickleJr@normalized.count.matrices)
@@ -636,7 +636,7 @@ SetWandHfromWHinitials<-function(SickleJr,d){
 #'
 #' \insertRef{Liu2013}{jrSiCKLSNMF}
 #'
-#' @examples SimSickleJrSmall<-RunjrSiCKLSNMF(SimSickleJrSmall,rounds=5)
+#' @examples \dontrun{SimSickleJrSmall<-RunjrSiCKLSNMF(SimSickleJrSmall,rounds=5)}
 #' @export
 RunjrSiCKLSNMF<-function(SickleJr,rounds=30000,differr=1e-6,
                          display_progress=TRUE,lossonsubset=FALSE,losssubsetsize=dim(SickleJr@H)[1],
