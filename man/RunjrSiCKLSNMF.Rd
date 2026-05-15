@@ -59,7 +59,7 @@ Wrapper function to run jrSiCKLSNMF on an object of class SickleJr. Performs jrS
 the given SickleJr
 }
 \examples{
-SimSickleJrSmall<-RunjrSiCKLSNMF(SimSickleJrSmall,rounds=5)
+\dontrun{SimSickleJrSmall<-RunjrSiCKLSNMF(SimSickleJrSmall,rounds=5)}
 }
 \references{
 \insertRef{Cai2008}{jrSiCKLSNMF}

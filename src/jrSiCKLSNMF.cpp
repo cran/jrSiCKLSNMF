@@ -284,7 +284,7 @@ void perviewNMFMUR(const arma::field<arma::sp_mat>& datamatF, arma::field<arma::
      ErrorCheck(diffFunc,Hconstraint);
    }catch(std::invalid_argument& e){
      Rcerr <<e.what()<<std::endl;
-     return NULL;
+     return R_NilValue;
    }
    //First convert all Rcpp lists to fields. We will return WL at the end
    arma::field<arma::sp_mat> datamatF(numv,1);

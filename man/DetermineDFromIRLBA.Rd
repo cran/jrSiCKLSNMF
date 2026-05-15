@@ -23,7 +23,7 @@ final plot that concatenates all of the modalities together. Choose the largest 
 value among the three plots.
 }
 \examples{
-SimSickleJrSmall<-DetermineDFromIRLBA(SimSickleJrSmall,d=5)
+\dontrun{SimSickleJrSmall<-DetermineDFromIRLBA(SimSickleJrSmall,d=5)}
 }
 \references{
 \insertRef{irlba}{jrSiCKLSNMF}

@@ -1,3 +1,3 @@
-# jrSiCKLSNMF 1.2.3
+# jrSiCKLSNMF 1.2.4
 
-* Re-uploading after kknn fix
+* Adjusted dependency on scran to dependency on bluster and replaced the buildSNNGraph and buildKNNGraph functions from scran with the makeSNNGraph and makeKNNGraph functions from bluster

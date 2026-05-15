@@ -107,7 +107,7 @@ CreateSickleJr<-function(count.matrices,names=NULL){
 BuildKNNGraphLaplacians<-function(SickleJr,k=20){
     counts<-SickleJr@count.matrices
     SickleJr@graph.laplacian.list<-lapply(counts,function(x){
-    laplacian_matrix(buildKNNGraph(x,transposed=TRUE,k=k))})
+    laplacian_matrix(makeKNNGraph(x,k=k))})
   return(SickleJr)
 }
 
@@ -129,7 +129,7 @@ BuildKNNGraphLaplacians<-function(SickleJr,k=20){
 BuildSNNGraphLaplacians<-function(SickleJr,k=20){
     counts<-SickleJr@count.matrices
     SickleJr@graph.laplacian.list<-lapply(counts,function(x){
-    laplacian_matrix(buildSNNGraph(x,transposed=TRUE,k=k))})
+    laplacian_matrix(makeSNNGraph(x,k=k))})
   return(SickleJr)
 }
 
@@ -844,7 +844,7 @@ ClusterSickleJr<-function(SickleJr,numclusts,method="kmeans",neighbors=20,louvai
   }else if(method=="spectral"){
     clust<-specClust(SickleJr@H,centers=numclusts,nn=neighbors)$cluster
   }else if(method=="louvain"){
-    knngraph<-buildKNNGraph(SickleJr@H,transposed=TRUE,k=neighbors)
+    knngraph<-makeKNNGraph(SickleJr@H,k=neighbors)
     newvals<-cluster_louvain(knngraph,resolution = louvainres)
     clust<-newvals$membership
   }else if(method=="max"){
